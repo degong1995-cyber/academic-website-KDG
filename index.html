@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Research Studio</title>
+    <meta
+      name="description"
+      content="A modular academic website template for research groups, faculty, and interdisciplinary labs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <span class="brand-kicker" id="brand-kicker">Research Studio</span>
+          <span class="brand-title" id="brand-title">Academic Research Studio</span>
+        </a>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation"></nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow" id="hero-eyebrow">Interdisciplinary Research</p>
+            <h1 id="hero-title">Building rigorous ideas for policy, society, and technology.</h1>
+            <p class="hero-summary" id="hero-summary"></p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" id="hero-primary-link" href="#publications">View Publications</a>
+              <a class="button button-secondary" id="hero-secondary-link" href="#contact">Collaborate</a>
+            </div>
+
+            <div class="hero-metrics" id="hero-metrics"></div>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="panel-card panel-highlight">
+              <p class="panel-label">Current Highlight</p>
+              <h2 id="highlight-title"></h2>
+              <p id="highlight-summary"></p>
+              <a id="highlight-link" href="#" target="_blank" rel="noreferrer">Read more</a>
+            </div>
+            <div class="panel-card">
+              <p class="panel-label">Research Areas</p>
+              <div class="tag-grid" id="hero-tags"></div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section intro-grid" id="about">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2 class="section-title" id="about-title"></h2>
+          </div>
+          <div class="rich-text" id="about-copy"></div>
+        </section>
+
+        <section class="section" id="research">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Research</p>
+              <h2 class="section-title">Themes and Ongoing Inquiry</h2>
+            </div>
+            <p class="section-note">
+              Structured like a faculty homepage, but modular enough to support a single PI, a lab,
+              or a collaborative center.
+            </p>
+          </div>
+          <div class="card-grid" id="research-grid"></div>
+        </section>
+
+        <section class="section split-section" id="publications">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Publications</p>
+              <h2 class="section-title">Selected Writing and Recent Work</h2>
+            </div>
+            <a class="text-link" id="all-publications-link" href="#" target="_blank" rel="noreferrer"
+              >Full publication list</a
+            >
+          </div>
+          <div class="publication-list" id="publication-list"></div>
+        </section>
+
+        <section class="section news-section" id="news">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">News</p>
+              <h2 class="section-title">Updates, Talks, and Announcements</h2>
+            </div>
+          </div>
+          <div class="news-grid" id="news-grid"></div>
+        </section>
+
+        <section class="section" id="people">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">People</p>
+              <h2 class="section-title">Team and Collaborators</h2>
+            </div>
+          </div>
+          <div class="people-grid" id="people-grid"></div>
+        </section>
+
+        <section class="section resources-section">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Resources</p>
+              <h2 class="section-title">Teaching, Media, and Open Resources</h2>
+            </div>
+          </div>
+          <div class="resource-grid" id="resource-grid"></div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-card">
+            <div>
+              <p class="section-kicker">Contact</p>
+              <h2 class="section-title" id="contact-title"></h2>
+              <p class="contact-copy" id="contact-summary"></p>
+            </div>
+            <div class="contact-details" id="contact-details"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p id="footer-text"></p>
+    </footer>
+
+    <script src="content/site-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
