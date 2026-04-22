@@ -170,9 +170,9 @@ a {
 
 .hero h1 {
   max-width: 10ch;
-  font-family: "Instrument Serif", serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(3.3rem, 8vw, 6.2rem);
-  font-weight: 400;
+  font-weight: 800;
   margin-top: 12px;
 }
 
@@ -276,6 +276,29 @@ a {
 
 .panel-card {
   padding: 28px;
+}
+
+.hero-image-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-image-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: linear-gradient(135deg, rgba(15, 90, 88, 0.14), rgba(211, 111, 66, 0.2));
+}
+
+.image-caption {
+  padding: 20px 24px 24px;
+}
+
+.image-caption p:last-child {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .panel-highlight {
@@ -476,6 +499,16 @@ a {
 .person-card {
   position: relative;
   overflow: hidden;
+}
+
+.person-image {
+  display: block;
+  width: calc(100% + 48px);
+  max-width: none;
+  margin: -24px -24px 18px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: linear-gradient(135deg, rgba(15, 90, 88, 0.14), rgba(211, 111, 66, 0.2));
 }
 
 .person-card::before {
