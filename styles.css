@@ -79,6 +79,11 @@ a {
   color: var(--brand);
 }
 
+.brand-kicker {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
 .brand-title {
   font-weight: 800;
   font-size: 1rem;

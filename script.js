@@ -25,7 +25,6 @@ const renderList = (id, items, template) => {
 };
 
 const renderNavigation = () => {
-  setText("brand-title", data.brand.title);
   setText("brand-kicker", data.brand.kicker);
   setText("footer-text", data.footer);
 
